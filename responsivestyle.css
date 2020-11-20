@@ -1,0 +1,145 @@
+/*This is a responsive stylesheet*/
+/****responsive navbar****/
+.navbar{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 10em;
+    transition: all 400ms ease-in-out;
+}
+/*navbar visibility*/
+.v-nav-resp{
+    visibility: hidden;
+    transition: visibility 300ms ease-in-out;
+}
+/*navigation bar items*/
+.navbar>.navlist{
+    width: 18em;
+    flex-wrap: wrap;
+}
+/*navbar links styles*/
+.navbar > .navlist > .navitem > a {
+    margin: 2px auto;
+    font-family: "Quicksand", sans-serif;
+    font-size: 15px;
+    padding: 5px 10px;
+}
+/*navbar height when the navbar is hidden*/
+.h-nav-resp{
+    max-height: 4.2em;
+}
+/*logo style*/
+.navbar > .logo > img {
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    transition: display  400ms ease-in-out;
+}
+/*logo heading*/
+.logoheading {
+    font-size: 15px;
+}
+
+/*Burger*/
+.burger{
+    display: block;
+}
+/***responsive navbar***/
+
+/****utility classes****/
+/*section*/
+.section{
+    height: 23rem;
+    align-items: center;
+    justify-content: center;
+    min-width: 20em;
+    margin: 5px;
+    
+}
+/*content*/
+.content{
+    max-width: 21em;
+}
+/*images*/
+.image>img {
+    margin: 0 0em;
+    height: 9em;
+    width: 8em;
+}
+
+/*paragraphs*/
+p{
+    font-size: 20px;
+    max-width: 14em;
+}
+
+/*headings*/
+.head {
+    font-size: 14px;
+}
+/*small paragraphs*/
+.small {
+    font-size: 13px;
+    margin: 4px 0;
+}
+/*classes inside .explain*/
+.explain > .content > .image > img {
+    height: 3em;
+    width: 4em;
+}
+
+.explain > .content {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0.2em 0;
+}
+/*button*/
+.button {
+    margin: 3px;
+    padding: 2px 5px;
+    font-size: 15px;
+}
+
+/****custom sections****/
+#section-8> .content > .image > img {
+    height: 3em;
+    width: 5em;
+}
+#section-9 > .content > .image > img {
+    height: 4em;
+    width: 5em;
+    margin: 3px;
+}
+#section-10> .content > .image > img {
+    margin: 7px;
+    height: 7em;
+    box-shadow: 0px 2px 4px #0f3460;
+    border-radius: 10px;
+    width: 8em;
+}
+
+/*contact-box*/
+#contact-box{
+    max-width: 10em;
+    justify-content: center;
+    align-items: center;
+}
+/*contact box form*/
+#contact-box form{
+    width: inherit;
+}
+/*contact box form inputs and testareas*/
+#contact-box input,
+#contact-box textarea{
+    width: 18em;
+    margin: 5px;
+    padding: 8px 5px;
+    font-size: 10px;
+}
+/*contact box form placeholders*/
+form input::placeholder,
+textarea::placeholder{
+    color: #0f3460;
+    font-size: 15px;
+}

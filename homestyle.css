@@ -1,0 +1,273 @@
+/*Reseting css*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*scroll behaviour*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*font-family for navbar, logoheading, content, heading, paras*/
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Raleway:wght@600&family=Varela+Round&display=swap");
+
+/*Adding background to body*/
+body {
+  background: url("bg.png") #c4e7e7;
+  background-blend-mode: overlay;
+}
+
+/*Navigation bar style*/
+.navbar {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+/*navbar logo style*/
+.navbar > .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*navbar logo image*/
+.navbar > .logo > img {
+  width: 80px;
+  height: 80px;
+}
+
+/*navbar logo heading*/
+.logoheading {
+  color: #272343;
+  text-shadow: 1px 1px 2px #080072;
+  font-size: 30px;
+  font-family: "Varela Round", sans-serif;
+}
+
+/*navgation menu style*/
+.navbar > .navlist {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+/*navbar link style*/
+.navbar > .navlist > .navitem > a {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  padding: 0 8px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #17223b;
+  text-shadow: 0px 1px 1px #080072;
+}
+/*navabar hover style*/
+.navbar > .navlist > .navitem > a:hover {
+  color: #6c63ff;
+  text-shadow: 0px -1px 1.5px #080072;
+  transition: all 200ms ease;
+}
+
+/*hamburger menu*/
+.burger{
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  top:8px;
+  right: 6px;
+}
+/*hamburger menu lines*/
+.line{
+  width: 30px;
+  background-color: #17223b;
+  height: 3px;
+  margin: 4px 2px;
+}
+
+/*****utility classes******/
+/*for sections*/
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 32rem;
+}
+/*for contents*/
+.content {
+  display: flex;
+  align-items: center;
+  margin: 1em 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50em;
+}
+/*width control*/
+.w{
+  width: 20em;
+}
+/*settng display block*/
+.block{
+  display: block;
+}
+/*paragraphs*/
+p{
+  font-family: "Raleway", sans-serif;
+  font-size: 45px;
+  max-width: 14em;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+/*spans inside paragraph*/
+p > span {
+  color: #6c63ff;
+}
+/*buttons*/
+.button{
+  cursor: pointer;
+  margin: 5px;
+  padding: 5px 12px;
+  border: 2px solid #6c63ff;
+  background-color: #ffffff;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  color: #6c63ff;
+  border-radius: 5px;
+  outline: none;
+}
+/*styling headings*/
+.head {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 6px 0;
+}
+/*styling small paras*/
+.small {
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+  font-size: 21px;
+  max-width: 27em;
+  margin: 15px 5px;
+}
+/*button hover*/
+.button:hover {
+  color: #ffffff;
+  background-color: #6c63ff;
+  box-shadow: 0px 1px 4px #0f3460;
+  transition: all 200ms ease;
+}
+/*controlling images*/
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*images inside image class block*/
+.image > img {
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30em;
+  width: 30em;
+}
+/*images inside head*/
+.head > img {
+  height: 1.3em;
+  width: 2em;
+  margin-right: 2px;
+}
+/*changing flex dirction*/
+.explain {
+  flex-direction: column;
+  justify-content: center;
+}
+/*images inside .explain class section block*/
+.explain > .content > .image > img {
+  margin: 0 2em;
+  height: 8em;
+  width: 7em;
+}
+
+/*direction row reverse*/
+.row-r{
+  flex-direction: row-reverse;
+}
+/****utility classes******/
+
+/***custom styles***/
+/*section-8*/
+#section-8> .content > .image > img {
+    height: 5em;
+    width: 6em;
+}
+
+/*section-9*/
+#section-9> .content > .image > img {
+    height: 5em;
+    box-shadow: 0px 2px 4px #0f3460;
+    border-radius: 10px;
+    width: 5em;
+}
+/*section-10*/
+#section-10> .content > .image > img {
+  height: 8em;
+  box-shadow: 0px 2px 4px #0f3460;
+  border-radius: 10px;
+  width: 10em;
+}
+/***custom styles***/
+
+/*section-11 contact-box*/
+#contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*contact box form*/
+#contact-box form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 34em;
+    justify-content: center;
+}
+/*contact box form button*/
+#contact-box>form>button{
+    align-self: flex-end;
+}
+/*contact box form inputs and textareas*/
+#contact-box input,
+#contact-box textarea{
+    outline: none;
+    border: none;
+    background-color: #ffffff;
+    margin: 10px 0;
+    padding: 10px;
+    width: 30em;
+    font-size: 17px;
+    border: 2px solid #14274e;
+    color: #080072;
+    border-radius: 15px;
+    font-family: "Raleway", sans-serif;
+    resize: none;
+
+}
+
+/*contact box form inputs and textareas placeholders*/
+form input::placeholder,
+textarea::placeholder{
+    color: #080072;
+    font-size: 17px;
+    font-family: "Raleway", sans-serif;
+
+}
+
+/*autofill styling*/
+input:-webkit-autofill,
+textarea:-webkit-autofill{
+    transition: background-color 5000s ease-in-out 0s;
+}

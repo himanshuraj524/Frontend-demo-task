@@ -21,6 +21,7 @@ body {
 /*Navigation bar style*/
 .navbar {
   max-width: 100%;
+  min-width: 85%;
   display: flex;
   justify-content: space-between;
   background-color: transparent;
@@ -75,8 +76,8 @@ body {
   display: none;
   position: absolute;
   cursor: pointer;
-  top:8px;
-  right: 6px;
+  top: 2.3vh;
+  right: 2vw;
 }
 /*hamburger menu lines*/
 .line{
@@ -129,13 +130,20 @@ p > span {
   cursor: pointer;
   margin: 5px;
   padding: 5px 12px;
-  border: 2px solid #6c63ff;
-  background-color: #ffffff;
+  background-color: #6c63ff;
   font-size: 18px;
+  color: #ffffff;
+  border: 2px solid #6c63ff;
   font-family: "Raleway", sans-serif;
-  color: #6c63ff;
   border-radius: 5px;
   outline: none;
+}
+/*button hover*/
+.button:hover {
+  color: #6c63ff;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 4px #0f3460;
+  transition: all 200ms ease;
 }
 /*styling headings*/
 .head {
@@ -153,13 +161,7 @@ p > span {
   max-width: 27em;
   margin: 15px 5px;
 }
-/*button hover*/
-.button:hover {
-  color: #ffffff;
-  background-color: #6c63ff;
-  box-shadow: 0px 1px 4px #0f3460;
-  transition: all 200ms ease;
-}
+
 /*controlling images*/
 .image {
   display: flex;
@@ -207,15 +209,16 @@ p > span {
 /*section-9*/
 #section-9> .content > .image > img {
     height: 5em;
+    padding: 1em;
     box-shadow: 0px 2px 4px #0f3460;
-    border-radius: 10px;
+    border-radius: 50%;
     width: 5em;
 }
 /*section-10*/
 #section-10> .content > .image > img {
-  height: 8em;
+  height: 10em;
   box-shadow: 0px 2px 4px #0f3460;
-  border-radius: 10px;
+  border-radius: 50%;
   width: 10em;
 }
 /***custom styles***/

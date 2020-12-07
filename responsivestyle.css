@@ -5,7 +5,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     max-height: 8vh;
-    transition: all 200ms cubic-bezier(0.48, 0.81, 0.32, 0.68);
+    transition: all 180ms cubic-bezier(0.48, 0.81, 0.32, 0.68);
 }
 /*navbar visibility*/
 .v-nav-resp{
@@ -16,6 +16,7 @@
 .navbar>.navlist{
     width: 10em;
     flex-wrap: wrap;
+    justify-content: end;
 }
 /*navbar links styles*/
 .navbar > .navlist > .navitem > a {
@@ -23,11 +24,11 @@
     font-family: "Quicksand", sans-serif;
     font-size: 15px;
     padding: 5px 10px;
-    text-shadow: 0px 0.4px 0.4px #080072;
+    text-shadow: 0px 0.7px 0.7px #080072;
 }
 /*navabar hover style*/
 .navbar > .navlist > .navitem > a:hover {
-    text-shadow: 0px -0.1px 0.5px #080072;
+    text-shadow: 0px -0.1px 0.8px #080072;
 }
 /*navbar height when the navbar is hidden*/
 .h-nav-resp{
